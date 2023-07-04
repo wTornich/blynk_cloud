@@ -1,6 +1,6 @@
 # Blynk Cloud
 
-### Configuração do arquivo config
+### Configuração do arquivo config.js
 
     {
 	module: 'blynkcloud',
