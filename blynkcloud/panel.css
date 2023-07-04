@@ -1,0 +1,211 @@
+
+.blynk_module {
+    
+}
+
+  .blynkmodule {
+    background-color: #9797972c;
+    padding: 30px;
+  }
+
+
+  .button_container {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border: 2px rgb(202, 202, 202);
+    border-style: solid;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 45px;
+    height: 45px;
+    border: 2px rgb(202, 202, 202);
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+
+.stylecheck {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  
+  .button:hover input ~ .stylecheck {
+    background-color: #979797;
+    transition: 0.2s;
+  }
+
+  .button input:checked ~ .stylecheck {
+    background-color: #17a777;
+  }
+
+  .button .checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.device_status_conection_icon {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.device_status_conection_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*               ---------------------- SLIDER                */
+.slidercontainer {
+  
+}
+
+.slider {
+  -webkit-appearance: none;
+  border-radius: 10px; 
+  width: 200px;
+  height: 3px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+	
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+ box-shadow: 3px 2px 39px 23px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 2px 39px 23px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 2px 39px 23px rgba(0,0,0,0.75);
+  appearance: none;
+  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider_show_value {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20pt;
+  background-color: #ffffff3f;
+  color: white;
+  text-align: center;
+}
+
+
+/* BUTTON */
+
+
+
+.container_button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: solid #ccc;
+}
+
+.container_label {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container_label:hover input~.checkmark_btn {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_label input:checked~.checkmark_btn {
+  background-color: #26ca70;
+}
+
+/* Create the checkmark_btn/indicator (hidden when not checked) */
+.container_label:after {
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark_btn when checked */
+.container_label input:checked~.checkmark_btn:after {
+  display: block;
+}
+
+/* Style the checkmark_btn/indicator */
+.container_label .checkmark_btn:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
